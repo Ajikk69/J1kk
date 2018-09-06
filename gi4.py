@@ -336,7 +336,6 @@ def lineBot(op):
                 if text.lower() == 'help':
                     helpMessage = helpmessage()
                     gye.sendMessage(to, str(helpMessage))
-                    gye.sendContact(to, "u3dc65b6997363cb13c01941a14594103")
                 elif text.lower() == 'proset':
                     helpTextToSpeech = helptexttospeech()
                     gye.sendMessage(to, str(helpTextToSpeech))
