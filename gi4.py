@@ -27,27 +27,27 @@ from googletrans import Translator
 #==============================================================================#
 botStart = time.time()
 #kalo mau login code qr disini pake
-gye = LINE('EwRNTCO3A8iFKwIZriif.g17Y57nD5k9pe4OxF95MlW.XZnrB30IPmAUl3c1gXD+GJejZ0V0qsS1WSCZCisqHO8=')
+gye = LINE('EwQam8Il4cVri6ciNB1f.TT6PpHTO+mHBszNrdOG7pW.i6YicTNVijedthUyda4/AtRjSGrYj0qTUPZW6zaSq8s=')
 gye.log("Auth Token : " + str(gye.authToken))
 channelToken = gye.getChannelResult()
 gye.log("Channel Token : " + str(channelToken))
 
-ais = LINE('EwQV4F6VnRZL1SDYUOl8.mHKIXBbafWPNaf7d2hYCsa.IlShq46zuVi4qSBq8/UPKJf/0OO31r3VzpvZOrY/jbs=')
+ais = LINE('EwLYWilYqGoG2xWQ0cF3.i39LQ02amFvPaEfWy3HQuW.VC2XPJLH12C8Rvi4oBnHphB+Mcs7VbWLbYT2h3nfmgs=')
 ais.log("Auth Token : " + str(ais.authToken))
 channelToken = ais.getChannelResult()
 ais.log("Channel Token : " + str(channelToken))
 
-ki2 = LINE('EwgCUVgnypjGO6PFSrf9.RR3MEgCQU2s9o707g8PAUq.BWEUNDsaBLbnU/zkWK23ll29sN0hehq6kEWnLBo2JeA=')
+ki2 = LINE('EwSM0yrhY9nVdV5t8Umd.deWtdg9PZ9k7CzQfHI20Rq.DfcH5o3Z3V75WdGaaW9B9tZH4AcBvlrpWTwb1oc/VaQ=')
 ki2.log("Auth Token : " + str(ki2.authToken))
 channelToken = ki2.getChannelResult()
 ki2.log("Channel Token : " + str(channelToken))
 
-ki3 = LINE('EwwmGYizMBNdRf7Opv12.jGx0bVoP/ampATDs/bNeyG.qQsqJ58FEwt2hwta/3tHdeM02lTxS1shFrdzUS0agng=')
+ki3 = LINE('EwmoZYbo2PXP8Itn9dKc.zkzbOXqf9+UZiIuPohZdha.wiCEZLemucLN4ln4B08QaQ2cSquoFlJgJaoIJJ1TbJs=')
 ki3.log("Auth Token : " + str(ki3.authToken))
 channelToken = ki3.getChannelResult()
 ki3.log("Channel Token : " + str(channelToken))
 
-ki4 = LINE('EwBgMKrGQlDyHwYoAISc.YR1w61O6oVGnZ2S/3K9fBa.uQdde9yvRKsckM+ri/X7sTOBOrPk8iraYCWxqoH9KJs=')
+ki4 = LINE('EwFR7seDTIEQSKcjk9Q7.Y8Xba7U8kcqJUU/1Hs5S1W.8k1lqPpiJFdWSwRFteAyE94S+mq2xEwGgLD9ojtMhUc=')
 ki4.log("Auth Token : " + str(gye.authToken))
 channelToken = ki4.getChannelResult()
 ki4.log("Channel Token : " + str(channelToken))
@@ -149,14 +149,14 @@ def sendMessageWithMention(to, mid):
         
 def helpmessage():
     helpMessage = "╭════════╬╬════════╮" + "\n" + \
-                  "║͜͡•••J1kk" + "\n" + \
+                  "║͜͡•••PMR BOTS" + "\n" + \
                   "╰════════╬╬════════╯" + "\n" + \
                   "╭════════╬╬════════╮" + "\n" + \
                   "║͜͡☆➣ Proset" + "\n" + \
                   "║͜͡☆➣ Special" + "\n" + \
                   "║͜͡☆➣ J1kk" + "\n" + \
                   "║͜͡☆➣ About" + "\n" + \
-                  "║͜͡☆➣ Creator" + "\n" + \
+                  "║͜͡☆➣ Runtime" + "\n" + \
                   "║͜͡☆➣ Me" + "\n" + \
                   "║͜͡☆➣ Run" + "\n" + \
                   "║͜͡☆➣ Status" + "\n" + \
@@ -171,6 +171,7 @@ def helptexttospeech():
                   "║͜͡Protect Settings" + "\n" + \
                   "╰════════╬╬════════╯" + "\n" + \
                   "╭════════╬╬════════╮" + "\n" + \
+                  "║͜͡☆➣ Pro on/off" + "\n" + \
                   "║͜͡☆➣ Protect on/off" + "\n" + \
                   "║͜͡☆➣ QrProtect on/off" + "\n" + \
                   "║͜͡☆➣ InviteProtect on/off" + "\n" + \
@@ -272,7 +273,7 @@ def command(text):
 def lineBot(op):
     try:
         if op.type == 0:
-            print ("[ 0 ] GYEVHA BOTS SATU")
+            print ("[ 0 ] J1kk BOTS SATU")
             return
 #-------------------------------------------------------------------------------
         if op.type == 25:
@@ -361,7 +362,7 @@ def lineBot(op):
                 elif text.lower() == 'about':
                     try:
                         arr = []
-                        owner = "u3dc65b6997363cb13c01941a14594103"
+                        owner = "u1b5ef2e7b35de4af4f138a177fde662f"
                         creator = gye.getContact(owner)
                         contact = gye.getContact(gyeMID)
                         grouplist = gye.getGroupIdsJoined()
@@ -603,7 +604,7 @@ def lineBot(op):
                         gye.sendMessage(msg.to,"Protect on")
                         gye.sendMessage(msg.to,"Inviteprotect on")
                         gye.sendMessage(msg.to,"Cancelprotect on")
-                        gye.sendMessage(msg.to,"➲ All Protect Set To On")
+                        gye.sendMessage(msg.to,"➲ All Protect Set To Nyala")
                         		            
                 elif text.lower() == 'pro off':
              #       if msg._from in Owner:
@@ -678,7 +679,7 @@ def lineBot(op):
                     ki2.leaveGroup(msg.to)
                     ki3.leaveGroup(msg.to)
                     ki4.leaveGroup(msg.to)
-                elif text.lower() in ["Cabut dulu"]:    
+                elif text.lower() in ["hidup"]:    
                     gye.leaveGroup(msg.to)
                     ais.leaveGroup(msg.to)
                     ki2.leaveGroup(msg.to)
@@ -980,11 +981,11 @@ def lineBot(op):
                         ki4.sendMessage(msg.to,"➲ Done")
                         
                 elif text.lower() == 'j1kk':
-                        gye.sendMessage(msg.to,"Im")
-                        ais.sendMessage(msg.to,"Your")
-                        ki2.sendMessage(msg.to,"Master")
-                        ki3.sendMessage(msg.to,"Bitch!!")
-                        ki4.sendMessage(msg.to,"All here")
+                        gye.sendMessage(msg.to,"J1kk")
+                        ais.sendMessage(msg.to,"Is")
+                        ki2.sendMessage(msg.to,"My")
+                        ki3.sendMessage(msg.to,"Master")
+                        ki4.sendMessage(msg.to,"All Here")
                         
                 elif text.lower() == 'bancontact':
                         settings["wblacklist"] = True
